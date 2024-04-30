@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Mall</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 연결 -->
+    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+</head>
+<body>
+    <header>
+        <div class="logo">Simple Shopping Mall</div>
+    </header>
+    <div id="content">
+        <!-- 로그인 폼 -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username"><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password"><br>
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="showSignupForm()">Sign Up</button>
+                <div id="login-result"></div> <!-- 로그인 결과 표시 -->
+            </form>
+        </div>
+        <!-- 회원가입 폼 (초기에는 보이지 않음) -->
+        <div id="signup-form">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username"><br>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password"><br>
+                <label for="signup-confirm-password">Confirm Password:</label>
+                <input type="password" id="signup-confirm-password" name="signup-confirm-password"><br>
+                <label for="signup-birthdate">Birthdate:</label>
+                <input type="date" id="signup-birthdate" name="signup-birthdate"><br>
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="signup-name"><br>
+                <button type="button" onclick="register()">Sign Up</button>
+                <button type="button" onclick="showLoginForm()">Cancel</button>
+                <div id="signup-result"></div> <!-- 회원가입 결과 표시 -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
